@@ -6,6 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p>
+          This app will allow you to see your delivery route.
+        </p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
