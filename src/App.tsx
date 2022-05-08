@@ -1,27 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import './App.scss';
+
+import { Navbar, Nav } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+
+
+import { Home } from './Home';
+import { Trucks } from './Trucks';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          This app will allow you to see your delivery route.
-        </p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <Navbar expand="lg">
+        {/* <Container> */}
+          <Navbar.Brand>metaTMS</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav>
+              <Nav.Link><Link to="/">Home</Link></Nav.Link>
+              <Nav.Link><Link to="/trucks">Trucks</Link></Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        {/* </Container> */}
+      </Navbar>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/trucks" element={<Trucks />} />
+      </Routes>
     </div>
   );
 }
