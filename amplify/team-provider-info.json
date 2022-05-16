@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-metatms-dev-21808-authRole",
+      "UnauthRoleArn": "arn:aws:iam::022970387508:role/amplify-metatms-dev-21808-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::022970387508:role/amplify-metatms-dev-21808-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-metatms-dev-21808-deployment",
+      "UnauthRoleName": "amplify-metatms-dev-21808-unauthRole",
+      "StackName": "amplify-metatms-dev-21808",
+      "StackId": "arn:aws:cloudformation:us-east-1:022970387508:stack/amplify-metatms-dev-21808/03aa0a00-ce9f-11ec-a3cc-0ead2c327235",
+      "AmplifyAppId": "dvib9ilgluumr"
+    }
+  }
+}
