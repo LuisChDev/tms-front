@@ -1,3 +1,7 @@
+$body-bg: #888;
+
+@import '~bootstrap/scss/bootstrap.scss';
+
 html {
   // the world's ugliest color. Fix your app so no one sees it
   background-color:	#4A412A;

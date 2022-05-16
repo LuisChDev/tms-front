@@ -1,0 +1,43 @@
+.tms-front-locations {
+  p {
+    background-color: darkgray;
+  }
+
+  .tms-front-locations-table {
+    border: solid 1px blue;
+
+    .tms-front-locations-table-header {
+      border-bottom: solid 3px red;
+      background: aliceblue;
+      color: black;
+      font-weight: bold;
+    }
+
+    .tms-front-locations-table-cell {
+      padding: 10px;
+      border: solid 1px gray;
+      background: papayawhip;
+    }
+  }
+
+  .tms-front-locations-form-wrapper {
+    margin: 2rem;
+    padding: 1rem;
+    border: solid 5px palegoldenrod;
+    width: max-content;
+
+    .tms-front-locations-form-header {
+      border-bottom: solid 3px red;
+    }
+
+    .tms-front-locations-form {
+      background-color: goldenrod;
+
+      .tms-front-locations-form-group {
+        margin: 2rem;
+          max-width: 20rem;
+      }
+
+    }
+  }
+}

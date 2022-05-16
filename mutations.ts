@@ -9,9 +9,9 @@ export const createTruck = /* GraphQL */ `
   ) {
     createTruck(input: $input, condition: $condition) {
       id
-      name
       model
       year
+      mileage
       createdAt
       updatedAt
     }
@@ -24,9 +24,9 @@ export const updateTruck = /* GraphQL */ `
   ) {
     updateTruck(input: $input, condition: $condition) {
       id
-      name
       model
       year
+      mileage
       createdAt
       updatedAt
     }
@@ -39,9 +39,54 @@ export const deleteTruck = /* GraphQL */ `
   ) {
     deleteTruck(input: $input, condition: $condition) {
       id
-      name
       model
       year
+      mileage
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createLocation = /* GraphQL */ `
+  mutation CreateLocation(
+    $input: CreateLocationInput!
+    $condition: ModelLocationConditionInput
+  ) {
+    createLocation(input: $input, condition: $condition) {
+      id
+      latitude
+      longitude
+      address
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateLocation = /* GraphQL */ `
+  mutation UpdateLocation(
+    $input: UpdateLocationInput!
+    $condition: ModelLocationConditionInput
+  ) {
+    updateLocation(input: $input, condition: $condition) {
+      id
+      latitude
+      longitude
+      address
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteLocation = /* GraphQL */ `
+  mutation DeleteLocation(
+    $input: DeleteLocationInput!
+    $condition: ModelLocationConditionInput
+  ) {
+    deleteLocation(input: $input, condition: $condition) {
+      id
+      latitude
+      longitude
+      address
       createdAt
       updatedAt
     }

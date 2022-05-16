@@ -4,7 +4,14 @@ input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONL
 
 type Truck @model {
   id: ID! @primaryKey
-  name: String!
   model: String
   year: Int!
+  mileage: Float
+}
+
+type Location @model {
+  id: ID! @primaryKey
+  latitude: Float!
+  longitude: Float!
+  address: String
 }

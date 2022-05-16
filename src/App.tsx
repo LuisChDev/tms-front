@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 
 import { Home } from './Home';
 import { Trucks } from './Trucks';
+import { Locations } from './Locations';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Nav>
               <Nav.Link><Link to="/">Home</Link></Nav.Link>
               <Nav.Link><Link to="/trucks">Trucks</Link></Nav.Link>
+            <Nav.Link><Link to="/locations">Locations</Link></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         {/* </Container> */}
@@ -26,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/trucks" element={<Trucks />} />
+        <Route path="/locations" element={<Locations />} />
       </Routes>
     </div>
   );

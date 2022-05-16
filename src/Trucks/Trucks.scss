@@ -1,0 +1,22 @@
+.tms-front-trucks {
+  p {
+    background-color: darkgray;
+  }
+
+  .tms-front-trucks-table {
+    border: solid 1px blue;
+
+    .tms-front-trucks-table-header {
+      border-bottom: solid 3px red;
+      background: aliceblue;
+      color: black;
+      font-weight: bold;
+    }
+
+    .tms-front-trucks-table-cell {
+      padding: 10px;
+      border: solid 1px gray;
+      background: papayawhip;
+    }
+  }
+}
